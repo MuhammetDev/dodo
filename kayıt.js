@@ -95,23 +95,7 @@ module.exports = {
               logChannel.send({ embeds: [logEmbed] });
             }
 
-            // İsim değişikliklerini kaydet
-            let usernameChanges = {};
-            if (fs.existsSync('usernameChanges.json')) {
-              usernameChanges = JSON.parse(fs.readFileSync('usernameChanges.json', 'utf8'));
-            }
-            if (!usernameChanges[user.id]) {
-              usernameChanges[user.id] = [];
-            }
-            usernameChanges[user.id].push({
-              oldName: user.nickname || user.user.username,
-              newName: `${name}`,
-              changedBy: `<@${message.author.id}>`,
-              method: '**Kayıt**',
-              date: new Date().toISOString()
-            });
-            fs.writeFileSync('usernameChanges.json', JSON.stringify(usernameChanges, null, 2));
-
+            
             // Embed'i güncelle
             const updatedEmbed = new EmbedBuilder()
               .setTitle('Üye başarıyla kayıt edildi.')
