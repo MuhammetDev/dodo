@@ -9,7 +9,7 @@ module.exports = {
     // Gerekli rol ID'leri ve log kanalı ID'si
     const kayitsizRoleID = '1264249388516249631'; // Kayıtsız rolünün ID'sini burada değiştirin
     const kizRoleID = '1263218335361929256'; // Kız rolünün ID'sini burada değiştirin
-    const erkekRoleID = '11264249044071612500'; // Erkek rolünün ID'sini burada değiştirin
+    const erkekRoleID = '1264249044071612500'; // Erkek rolünün ID'sini burada değiştirin
     const logChannelID = '1242942289211560039'; // Log kanalının ID'sini burada değiştirin
     const yetkiliRoleID = '1264252101937070242'; // Yetkili rolünün ID'sini burada değiştirin
 
